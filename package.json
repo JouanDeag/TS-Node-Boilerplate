@@ -5,7 +5,9 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts"
+    "dev": "nodemon -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "start": "node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm dist/index.js"
   },
   "keywords": [],
   "author": "Johan Karlsson",
